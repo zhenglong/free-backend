@@ -1,0 +1,71 @@
+.hj-form {
+    margin: 8px 0;
+
+    &.ant-form-inline {
+        .hj-date-range-field {
+            width: 525px;
+        }
+        .hj-dropdown-field,
+        .hj-refresh-subfields-field {
+            width: 300px;
+        }
+    }
+
+    // TODO: 是否需要在common/pc中移除样式
+    .ant-calendar-picker-icon:after {
+        content: none;
+    }
+
+    .hj-class-list-select,
+    .hj-coupon-batch-list-select {
+        &>.ant-form-item-control-wrapper {
+            float: right;
+        }
+        
+        .add-batch-tip {
+            color: #aaa;
+            margin-left: 16px;
+        }
+
+        .ant-table-column-title {
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+    }
+    .hj-text-field {
+        .tip {
+            color: #aaa;
+        }
+    }
+
+    .action-buttons-wrapper {
+        text-align: center;
+    }
+
+    .hj-img-upload {
+        .annotation {
+            color: #bdbcba;
+        }
+        .ant-upload-list-item-thumbnail>img {
+            max-width: 48px;
+            max-height: 48px;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .bf-container .bf-media-toolbar {
+        bottom: initial;
+        top: 15px;
+    }
+    .bf-container .bf-media-toolbar .bf-media-toolbar-arrow {
+        top: -10px;
+        bottom: initial;
+        border-top-color: transparent;
+        border-bottom-color: #21242a;
+    }
+}

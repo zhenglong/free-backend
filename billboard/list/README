@@ -1,0 +1,149 @@
+// <hjForm fields=['位置名称',
+//     '页面名称',
+//     '平台',
+//     {
+//         dropdown: '内容类型',
+//         id: 'contentType',
+//     },
+//     {
+//         legend: '内容规则',
+//         fields: [
+//             {
+//                 'maxLengthInput': '最大长度'
+//             }
+//         ]
+//     }, {
+//         legend: '链接设置',
+//         fields: [
+//             {
+//                 checkbox: '',
+//                 label: '支持链接'
+//             },
+//             '链接地址开头'
+//         ]
+//     }, {
+//         checkbox: '绑定班级设置',
+//         title: '支持绑定班级'
+//     }, {
+//         classList: '批量添加班级',
+//         ignoreTitle: true
+//     }, {
+//         selectPictures: '图片'
+//     }, {
+//         couponBatchList: '添加批次',
+//         ignoreTitle: true
+//     }, {
+//         fields: [{
+//             richTextField: 'PC内容'
+//         }, {
+//             richTextField: 'MC & APP内容'
+//         }]
+//     }] actions = { FormActionType.submit | FormActionType.close } >
+// </hjForm>
+
+// 怎么用最简洁的方式显示一个列表页？
+
+<Page>
+    <ListFilter fields=['位置名称', {'dropdown':'页面名称'}, '状态']
+        actions={FilterActionType.search|ActionType.new}>
+    </ListFilter>
+    <list fields=[{'key':'billboardNo', 'title': '位置编号'}, {'key': 'billboardName', 'title': '位置名称'}, {'页面名称': 'pageName'}, {'状态': '', key: 'status'}] 
+        actions={ListItemActionType.edit|ListItemActionType.disable}>
+    </list>
+</Page>
+
+
+
+
+<Page>
+    <ListFilter fields=['位置名称', 'f2', 'f3'] />
+    <List fields=[{'key':'billboardNo', 'title': '位置编号'}, {'key': 'billboardName', 'title': '位置名称'}] />
+</Page>
+
+ListFiler初始化时，可以扩充字段类型和actions，它必须实现字段和action的布局
+怎么让它的数据管理统一化？
+列表页的全局store仅管理{list, pagination}，目前来看，没有很大必要去管理filter
+提供search提交时，表单数据修整的hook
+这边需要把antd的表单验证结合起来
+分页组件可以完全利用antd
+
+一个action的实现包含2部分：
+UI和触发动作
+
+对于表单 
+- 页面级
+<hjForm fields=['位置名称', 
+    '页面名称', 
+    '平台', 
+    {
+        dropdown: '内容类型', 
+        id: 'contentType',
+    }, 
+    {
+        legend: '内容规则', 
+        fields:[
+            {
+                'maxLengthInput': '最大长度'
+            }
+        ]
+    }, {
+        legend: '链接设置',
+        fields: [
+            {
+                checkbox: '',
+                label: '支持链接'
+            },
+            '链接地址开头'
+        ]
+    }, {
+        checkbox: '绑定班级设置',
+        title: '支持绑定班级'
+    }, {
+        classList: '批量添加班级',
+        ignoreTitle: true 
+    }, {
+        selectPictures: '图片'
+    }, {
+        couponBatchList: '添加批次',
+        ignoreTitle: true
+    }, {
+        fields: [{
+            richTextField: 'PC内容'
+        }, {
+            richTextField: 'MC & APP内容'
+        }]
+    }] actions={FormActionType.submit|FormActionType.close}>
+    
+</hjForm>
+
+field-type
+
+text
+dropdown
+datepicker
+daterange
+classList
+bactchList
+
+所有action不包含操作UI的代码，只能操作store
+
+store
+   基于redux，挂载在global上，
+
+验证规则解析
+   visibility:
+   
+   每次字段发生变更时，都会把值更新到store中，监听store变化，重新计算所有表达式的值，如果有值变更，执行对应回调
+   
+   具体流程
+   组件的onchange事件 -> 更新store -> 监听store变化 -> 计算相关表达式 -> 监听表达式值变化 -> 可订阅对象发布消息 -> 对应组件监听消息
+   
+   		propsConvert会包含一个可订阅对象传给对应组件，
+		
+		可订阅对象 <--> 组件
+		
+        基本结构
+		{
+		    "expr1": [callback1, callback2],
+			"expr2": [callback3, callback4]
+		}
