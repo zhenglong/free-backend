@@ -1,5 +1,5 @@
-import formCreator from '../../billboard/list/creators/form-creator';
-import global from '../../billboard/list/components/store/global';
+import formCreator from 'creators/form-creator';
+import global from 'components/store/global';
 import './index.scss';
 
 global.config.queryFieldsAPI = '/activity/v2/resource/activity/form/fields';

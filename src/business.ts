@@ -1,4 +1,4 @@
-import { FieldType, DictionaryEntry, ValidationRule, ValidationType, FieldValueRuleDef } from "../list/interfaces";
+import { FieldType, DictionaryEntry, ValidationRule, ValidationType, FieldValueRuleDef } from "./interfaces";
 
 const BackEndFieldType = {
     'hidden': FieldType.hidden,

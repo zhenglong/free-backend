@@ -1,17 +1,18 @@
 var path = require('path');
 var ExtractTextPlugin = require('mini-css-extract-plugin');
 var TerserPlugin = require('terser-webpack-plugin');
+var TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 var project_root = __dirname;
 var src_root = path.resolve(project_root, './src');
+var demo_root = path.resolve(project_root, './demo');
 
 module.exports = {
     mode: 'production',
     entry: {
-        'billboard-detail': path.resolve(src_root, './billboard/detail/app.tsx'),
-        'billboard-list': path.resolve(src_root, './billboard/list/app.tsx'),
-        'content-list': path.resolve(src_root, './content/list/app.tsx'),
-        'content-detail': path.resolve(src_root, './content/detail/app.tsx'),
-        'content-list': path.resolve(src_root, './content/list/app.tsx'),
+        'billboard-detail': path.resolve(demo_root, './billboard/detail/app.tsx'),
+        // 'billboard-list': path.resolve(demo_root, './billboard/list/app.tsx'),
+        // 'content-list': path.resolve(demo_root, './content/list/app.tsx'),
+        // 'content-detail': path.resolve(demo_root, './content/detail/app.tsx'),
     },
     output: {
         path: path.resolve(project_root, './dist'),
@@ -84,7 +85,8 @@ module.exports = {
             path.resolve(project_root, 'node_modules'),
             src_root
         ],
-        extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.html']
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.html'],
+        plugins: [new TsConfigPathsPlugin()]
     },
     optimization: {
         minimizer: [

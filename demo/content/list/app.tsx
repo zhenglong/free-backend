@@ -1,17 +1,17 @@
-import { HjFormProps } from '../../billboard/list/components/hj-form';
-import {FieldType, DictionaryEntry} from "../../billboard/list/interfaces";
-import { ActionButtonType as FormActionButtonType } from "../../billboard/list/components/hj-form/actions/actions-render";
-import {HjTableProps} from "../../billboard/list/components/hj-table";
-import { ActionButtonType } from '../../billboard/list/components/hj-table/actions/action-render';
-import { TableField } from "../../billboard/list/components/hj-table/table-field";
-import { HjPaginationProps } from "../../billboard/list/components/hj-pagination";
-import global from '../../billboard/list/components/store/global';
-import listCreator from "../../billboard/list/creators/list-creator";
+import { HjFormProps } from 'components/hj-form';
+import {FieldType, DictionaryEntry} from "interfaces";
+import { ActionButtonType as FormActionButtonType } from "components/hj-form/actions/actions-render";
+import {HjTableProps} from "components/hj-table";
+import { ActionButtonType } from 'components/hj-table/actions/action-render';
+import { TableField } from "components/hj-table/table-field";
+import { HjPaginationProps } from "components/hj-pagination";
+import global from 'components/store/global';
+import listCreator from "creators/list-creator";
 
 import './app.scss';
-import AsyncDependencyValue from '../../billboard/list/components/store/async-dependency-value';
-import ComputedValue from '../../billboard/list/components/store/computed-value';
-import { locationDataSource, statusDataSource, platformDataSource, locationMapping } from '../../billboard/list/consts';
+import AsyncDependencyValue from 'components/store/async-dependency-value';
+import ComputedValue from 'components/store/computed-value';
+import { locationDataSource, statusDataSource, platformDataSource, locationMapping } from 'consts';
 
 global.config.searchAPI = '/activity/v2/resource/activity/query';
 global.config.editAPI = '/billboardContent/';

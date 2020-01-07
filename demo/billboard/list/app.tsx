@@ -1,12 +1,12 @@
-import { HjFormProps } from './components/hj-form';
-import { FieldType } from "./interfaces";
-import { ActionButtonFlags, ActionButtonType as FormActionButtonType } from "./components/hj-form/actions/actions-render";
-import { HjTableProps } from "./components/hj-table";
-import { ActionButtonType } from './components/hj-table/actions/action-render';
-import { TableField } from "./components/hj-table/table-field";
-import { HjPaginationProps } from "./components/hj-pagination";
-import listCreator from './creators/list-creator';
-import { locationDataSource } from './consts';
+import { HjFormProps } from 'components/hj-form';
+import { FieldType } from "interfaces";
+import { ActionButtonFlags, ActionButtonType as FormActionButtonType } from "components/hj-form/actions/actions-render";
+import { HjTableProps } from "components/hj-table";
+import { ActionButtonType } from 'components/hj-table/actions/action-render';
+import { TableField } from "components/hj-table/table-field";
+import { HjPaginationProps } from "components/hj-pagination";
+import listCreator from 'creators/list-creator';
+import { locationDataSource } from 'consts';
 
 let formProps: HjFormProps = {
     layout: 'inline',
