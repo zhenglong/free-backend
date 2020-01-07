@@ -5,7 +5,6 @@ import HjTable from "../components/hj-table";
 import HjPagination from "../components/hj-pagination";
 import initStore from '../components/store';
 import global from '../components/store/global';
-import { ECLayout } from '@class/easy-backend';
 import {travelFieldDef} from '../util';
 import cacheKey from '../cache-key';
 
@@ -62,5 +61,5 @@ export default function listCreator(formProps: any, tableProps: any, paginationP
         hjPaginationRef.current.updateState(pagination);
     });
 
-    ReactDOM.render(<ECLayout><Page /></ECLayout>, document.getElementById('root'));
+    ReactDOM.render(<Page />, document.getElementById('root'));
 }

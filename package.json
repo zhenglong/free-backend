@@ -1,0 +1,56 @@
+{
+  "name": "free-backend",
+  "version": "1.0.0",
+  "description": "基于antd的后台自定义系统，与自由表单的差异： 1. 基于TypeScript 2. 支持字段级联",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "demo": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenglong/free-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenglong/free-backend/issues"
+  },
+  "homepage": "https://github.com/zhenglong/free-backend#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
+    "html-loader": "^0.5.5",
+    "http-server": "^0.12.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.2",
+    "sugarss": "^2.0.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "url-loader": "^3.0.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.3.31",
+    "@types/react": "^16.9.17",
+    "@types/react-dom": "^16.9.4",
+    "@types/redux": "^3.6.0",
+    "@types/redux-thunk": "^2.1.0",
+    "antd": "^3.26.6",
+    "axios": "^0.19.0",
+    "braft-editor": "^2.3.8",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  }
+}

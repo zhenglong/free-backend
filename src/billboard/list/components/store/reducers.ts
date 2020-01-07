@@ -2,7 +2,6 @@ import { HjAction } from "./hj-action";
 import ActionTypes from './action-types';
 import actionTypes from "./action-types";
 import {PaginationData} from './data-interface';
-import { stat } from "fs";
 
 export function queryConditions(state: any = {}, action: HjAction<any>): any {
     switch (action.type) {

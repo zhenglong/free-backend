@@ -10,7 +10,6 @@ import { getFieldType, getDictionaryEntryArray, getValidationRule } from '../bus
 import global from '../components/store/global';
 import querystring from '../querystring';
 
-import { ECLayout } from '@class/easy-backend';
 import cacheKey from "../cache-key";
 
 /**
@@ -119,11 +118,7 @@ export default function formCreator(disabledFieldNames: string[], fieldsId, valu
             actions: disableAll ? [ActionButtonType.back()] : [ActionButtonType.save(saveButtonInitData), ActionButtonType.back()]
         };
         // global.actions.updateQueryCondition(resourceValue);
-        ReactDOM.render(needLayout ? 
-            <ECLayout>
-                <HjForm {...formProps}></HjForm>
-            </ECLayout> : 
-            <HjForm {...formProps}></HjForm>, document.getElementById('root'));
+        ReactDOM.render(<HjForm {...formProps}></HjForm>, document.getElementById('root'));
     }
 
     initStore();
