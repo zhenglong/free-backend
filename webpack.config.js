@@ -10,9 +10,9 @@ module.exports = {
     mode: 'production',
     entry: {
         'billboard-detail': path.resolve(demo_root, './billboard/detail/app.tsx'),
-        // 'billboard-list': path.resolve(demo_root, './billboard/list/app.tsx'),
-        // 'content-list': path.resolve(demo_root, './content/list/app.tsx'),
-        // 'content-detail': path.resolve(demo_root, './content/detail/app.tsx'),
+        'billboard-list': path.resolve(demo_root, './billboard/list/app.tsx'),
+        'content-list': path.resolve(demo_root, './content/list/app.tsx'),
+        'content-detail': path.resolve(demo_root, './content/detail/app.tsx'),
     },
     output: {
         path: path.resolve(project_root, './dist'),
@@ -93,6 +93,16 @@ module.exports = {
             new TerserPlugin({
                 extractComments: true
             })
-        ]
+        ],
+        splitChunks: {
+            minSize: 10000,
+            cacheGroups: {
+                commons: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all'
+                }
+            }
+        },
     }
 };

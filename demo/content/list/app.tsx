@@ -1,17 +1,17 @@
-import { HjFormProps } from 'components/hj-form';
-import {FieldType, DictionaryEntry} from "interfaces";
-import { ActionButtonType as FormActionButtonType } from "components/hj-form/actions/actions-render";
-import {HjTableProps} from "components/hj-table";
-import { ActionButtonType } from 'components/hj-table/actions/action-render';
-import { TableField } from "components/hj-table/table-field";
-import { HjPaginationProps } from "components/hj-pagination";
-import global from 'components/store/global';
-import listCreator from "creators/list-creator";
+import { HjFormProps } from 'free-backend/components/hj-form';
+import { FieldType, DictionaryEntry } from "free-backend/interfaces";
+import { ActionButtonType as FormActionButtonType } from "free-backend/components/hj-form/actions/actions-render";
+import { HjTableProps } from "free-backend/components/hj-table";
+import { ActionButtonType } from 'free-backend/components/hj-table/actions/action-render';
+import { TableField } from "free-backend/components/hj-table/table-field";
+import { HjPaginationProps } from "free-backend/components/hj-pagination";
+import global from 'free-backend/components/store/global';
+import listCreator from "free-backend/creators/list-creator";
 
 import './app.scss';
-import AsyncDependencyValue from 'components/store/async-dependency-value';
-import ComputedValue from 'components/store/computed-value';
-import { locationDataSource, statusDataSource, platformDataSource, locationMapping } from 'consts';
+import AsyncDependencyValue from 'free-backend/components/store/async-dependency-value';
+import ComputedValue from 'free-backend/components/store/computed-value';
+import { locationDataSource, statusDataSource, platformDataSource, locationMapping } from 'free-backend/consts';
 
 global.config.searchAPI = '/activity/v2/resource/activity/query';
 global.config.editAPI = '/billboardContent/';

@@ -1,4 +1,4 @@
-import formCreator from '@free-backend/creators/form-creator';
+import formCreator from 'free-backend/creators/form-creator';
 import './index.scss';
 
 let resourceId = $('#item-id').val();
