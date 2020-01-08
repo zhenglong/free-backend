@@ -1,7 +1,7 @@
 import { SearchActionDescriber, IComputedValue } from './data-interface';
 import {Store} from 'redux';
 import { Dictionary } from '../../interfaces';
-import { CacheScope, Cache } from '../../hj-cache';
+import { CacheScope, Cache } from '../../fbd-cache';
 
 interface GlobalConfiguation {
     queryFieldsAPI: string;

@@ -1,10 +1,10 @@
-import { HjFormProps } from 'free-backend/components/hj-form';
+import { FbdFormProps } from 'free-backend/components/fbd-form';
 import { FieldType, DictionaryEntry } from "free-backend/interfaces";
-import { ActionButtonType as FormActionButtonType } from "free-backend/components/hj-form/actions/actions-render";
-import { HjTableProps } from "free-backend/components/hj-table";
-import { ActionButtonType } from 'free-backend/components/hj-table/actions/action-render';
-import { TableField } from "free-backend/components/hj-table/table-field";
-import { HjPaginationProps } from "free-backend/components/hj-pagination";
+import { ActionButtonType as FormActionButtonType } from "free-backend/components/fbd-form/actions/actions-render";
+import { FbdTableProps } from "free-backend/components/fbd-table";
+import { ActionButtonType } from 'free-backend/components/fbd-table/actions/action-render';
+import { TableField } from "free-backend/components/fbd-table/table-field";
+import { FbdPaginationProps } from "free-backend/components/fbd-pagination";
 import global from 'free-backend/components/store/global';
 import listCreator from "free-backend/creators/list-creator";
 
@@ -29,7 +29,7 @@ global.expressionGroup[locationExpr] = locationComputedValue;
 
 let defaultLocation = $('#hdn-location').val();
 
-let formProps: HjFormProps = {
+let formProps: FbdFormProps = {
     layout: 'inline',
     fields: [{
         type: FieldType.text,
@@ -89,7 +89,7 @@ let formProps: HjFormProps = {
     }],
     actions: [FormActionButtonType.search(), FormActionButtonType.create({ postfix: (defaultLocation ? locationMapping[defaultLocation + ''] : '') })]
 };
-let tableProps: HjTableProps = {
+let tableProps: FbdTableProps = {
     fields: [{
         title: '活动ID',
         key: 'activityId'
@@ -150,7 +150,7 @@ let tableProps: HjTableProps = {
         return arr;
     }
 };
-let paginationProps: HjPaginationProps = {
+let paginationProps: FbdPaginationProps = {
     defaultPageSize: 20,
     total: 0,
     current: 1

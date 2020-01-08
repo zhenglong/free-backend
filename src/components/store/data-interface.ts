@@ -1,4 +1,4 @@
-import { HjAction } from "./hj-action";
+import { FbdAction } from "./fbd-action";
 import { RecordIdGetter } from "../../interfaces";
 
 export interface PaginationData {

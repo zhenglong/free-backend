@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import ReactDOM from 'react-dom';
-import HjForm from '../components/hj-form';
-import HjTable from "../components/hj-table";
-import HjPagination from "../components/hj-pagination";
+import FbdForm from '../components/fbd-form';
+import FbdTable from "../components/fbd-table";
+import FbdPagination from "../components/fbd-pagination";
 import initStore from '../components/store';
 import global from '../components/store/global';
 import {travelFieldDef} from '../util';
 import cacheKey from '../cache-key';
 
 export default function listCreator(formProps: any, tableProps: any, paginationProps: any) {
-    let hjTableRef = React.createRef<HjTable>();
-    let hjPaginationRef = React.createRef<HjPagination>();
+    let fbdTableRef = React.createRef<FbdTable>();
+    let fbdPaginationRef = React.createRef<FbdPagination>();
 
     let savedFormData = global.cache.get(cacheKey.savedFieldValues);
 
@@ -36,9 +36,9 @@ export default function listCreator(formProps: any, tableProps: any, paginationP
         render() {
             return (
                 <React.Fragment>
-                    <HjForm {...formProps}></HjForm>
-                    <HjTable {...tableProps} ref={hjTableRef}></HjTable>
-                    <HjPagination {...paginationProps} ref={hjPaginationRef}></HjPagination>
+                    <FbdForm {...formProps}></FbdForm>
+                    <FbdTable {...tableProps} ref={fbdTableRef}></FbdTable>
+                    <FbdPagination {...paginationProps} ref={fbdPaginationRef}></FbdPagination>
                 </React.Fragment>
             );
         }
@@ -54,11 +54,11 @@ export default function listCreator(formProps: any, tableProps: any, paginationP
 
     global.store.subscribe(() => {
         let { dataSource, pagination } = global.store.getState();
-        if (!hjTableRef.current) {
+        if (!fbdTableRef.current) {
             return;
         }
-        hjTableRef.current.updateState(dataSource);
-        hjPaginationRef.current.updateState(pagination);
+        fbdTableRef.current.updateState(dataSource);
+        fbdPaginationRef.current.updateState(pagination);
     });
 
     ReactDOM.render(<Page />, document.getElementById('root'));

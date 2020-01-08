@@ -1,14 +1,14 @@
-import { HjFormProps } from 'free-backend/components/hj-form';
+import { FbdFormProps } from 'free-backend/components/fbd-form';
 import { FieldType } from "free-backend/interfaces";
-import { ActionButtonFlags, ActionButtonType as FormActionButtonType } from "free-backend/components/hj-form/actions/actions-render";
-import { HjTableProps } from "free-backend/components/hj-table";
-import { ActionButtonType } from 'free-backend/components/hj-table/actions/action-render';
-import { TableField } from "free-backend/components/hj-table/table-field";
-import { HjPaginationProps } from "free-backend/components/hj-pagination";
+import { ActionButtonFlags, ActionButtonType as FormActionButtonType } from "free-backend/components/fbd-form/actions/actions-render";
+import { FbdTableProps } from "free-backend/components/fbd-table";
+import { ActionButtonType } from 'free-backend/components/fbd-table/actions/action-render';
+import { TableField } from "free-backend/components/fbd-table/table-field";
+import { FbdPaginationProps } from "free-backend/components/fbd-pagination";
 import listCreator from 'free-backend/creators/list-creator';
 import { locationDataSource } from 'free-backend/consts';
 
-let formProps: HjFormProps = {
+let formProps: FbdFormProps = {
     layout: 'inline',
     fields: [{
         type: FieldType.text,
@@ -37,7 +37,7 @@ let formProps: HjFormProps = {
     }],
     actions: [FormActionButtonType.search(), FormActionButtonType.create()]
 };
-let tableProps: HjTableProps = {
+let tableProps: FbdTableProps = {
     fields: [{
         title: '位置编号',
         key: 'resourceCode'
@@ -64,7 +64,7 @@ let tableProps: HjTableProps = {
         ActionButtonType.toggle({ defaultValGetter: record => !!record.status })],
     dataSource: []
 };
-let paginationProps: HjPaginationProps = {
+let paginationProps: FbdPaginationProps = {
     defaultPageSize: 20,
     total: 0,
     current: 1

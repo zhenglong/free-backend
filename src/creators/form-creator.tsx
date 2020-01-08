@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import HjForm, { HjFormProps } from '../components/hj-form';
+import FbdForm, { FbdFormProps } from '../components/fbd-form';
 import { FormFieldDef, FieldType } from "../interfaces";
-import { ActionButtonType, SaveActionButtonInitData } from "../components/hj-form/actions/actions-render";
+import { ActionButtonType, SaveActionButtonInitData } from "../components/fbd-form/actions/actions-render";
 
 import initStore from '../components/store';
-import Ajax from "../hj-ajax";
+import Ajax from "../fbd-ajax";
 import { getFieldType, getDictionaryEntryArray, getValidationRule } from '../business';
 import global from '../components/store/global';
 import querystring from '../querystring';
@@ -76,7 +76,7 @@ export default function formCreator(disabledFieldNames: string[], fieldsId, valu
     };
     /**
      * 
-     * 数据映射，把后端返回的值转换成HjFieldDef
+     * 数据映射，把后端返回的值转换成FbdFieldDef
      * @param elem - 后端返回的数据
      */
     const fieldMap = (elem: any): FormFieldDef => {
@@ -113,12 +113,12 @@ export default function formCreator(disabledFieldNames: string[], fieldsId, valu
      * @param needLayout - 是否需要使用ECLayout
      */
     const renderFunc = (data: any, needLayout: boolean = false) => {
-        let formProps: HjFormProps = {
+        let formProps: FbdFormProps = {
             fields: data.map(fieldMap),
             actions: disableAll ? [ActionButtonType.back()] : [ActionButtonType.save(saveButtonInitData), ActionButtonType.back()]
         };
         // global.actions.updateQueryCondition(resourceValue);
-        ReactDOM.render(<HjForm {...formProps}></HjForm>, document.getElementById('root'));
+        ReactDOM.render(<FbdForm {...formProps}></FbdForm>, document.getElementById('root'));
     }
 
     initStore();

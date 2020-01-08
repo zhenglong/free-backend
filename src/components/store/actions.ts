@@ -1,4 +1,4 @@
-import Ajax from '../../hj-ajax';
+import Ajax from '../../fbd-ajax';
 import actionTypes from './action-types';
 import { PaginationData } from './data-interface';
 import global from './global';

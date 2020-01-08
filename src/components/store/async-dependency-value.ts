@@ -32,8 +32,8 @@
 // })
 
 import ComputedValue from "./computed-value";
-import Ajax from '../../hj-ajax';
-import {Observable} from '../hj-table/observable';
+import Ajax from '../../fbd-ajax';
+import {Observable} from '../fbd-table/observable';
 import { Thenable } from "./data-interface";
 
 class PromiseLikeObservable<T> implements Thenable {

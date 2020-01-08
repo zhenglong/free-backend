@@ -1,4 +1,4 @@
-import Ajax from "./hj-ajax";
+import Ajax from "./fbd-ajax";
 import global from './components/store/global';
 import { FormFieldDef } from "./interfaces";
 import { getFieldType, getDictionaryEntryArray, getValidationRule } from "./business";

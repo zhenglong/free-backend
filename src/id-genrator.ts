@@ -6,7 +6,7 @@ class IdGenerator {
     }
     next(): string {
         this.seq++;
-        return `__hj_id_${+new Date()}_${this.seq}`;
+        return `__fbd_id_${+new Date()}_${this.seq}`;
     }
 }
 

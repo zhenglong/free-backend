@@ -1,9 +1,9 @@
-import { HjAction } from "./hj-action";
+import { FbdAction } from "./fbd-action";
 import ActionTypes from './action-types';
 import actionTypes from "./action-types";
 import {PaginationData} from './data-interface';
 
-export function queryConditions(state: any = {}, action: HjAction<any>): any {
+export function queryConditions(state: any = {}, action: FbdAction<any>): any {
     switch (action.type) {
         case ActionTypes.UPDATE_QUERY_CONDITION:
             return {...state, ...action.data};
@@ -12,7 +12,7 @@ export function queryConditions(state: any = {}, action: HjAction<any>): any {
     }
 }
 
-export function dataSource(state: any = [], action: HjAction<any>): any {
+export function dataSource(state: any = [], action: FbdAction<any>): any {
     switch(action.type) {
         case actionTypes.UPDATE_DATA_SOURCE:
             return action.data;
@@ -34,7 +34,7 @@ export function dataSource(state: any = [], action: HjAction<any>): any {
     }
 }
 
-export function pagination(state: PaginationData = {}, action: HjAction<any>): PaginationData {
+export function pagination(state: PaginationData = {}, action: FbdAction<any>): PaginationData {
     switch (action.type) {
         case actionTypes.UPDATE_PAGINATION:
             return {...state, ...action.data};
