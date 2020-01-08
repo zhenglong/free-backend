@@ -42,6 +42,21 @@ module.exports = {
                 }
             },
             {
+                test: /\.less$/,
+                use: [{
+                    loader: ExtractTextPlugin.loader
+                }, {
+                    loader: 'css-loader'
+                }, {
+                    loader: 'postcss-loader',
+                    options: {
+                        plugins: [require('autoprefixer')]
+                    }
+                }, {
+                    loader: 'less-loader'
+                }]
+            },
+            {
                 test: /\.s?css$/,
                 use: [{
                     loader: ExtractTextPlugin.loader
