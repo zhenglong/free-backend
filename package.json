@@ -4,7 +4,7 @@
   "description": "基于antd的后台自定义系统，与自由表单的差异： 1. 基于TypeScript 2. 支持字段级联",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "rm -rf ./dist/ && webpack",
     "demo": "http-server ."
   },
   "repository": {
