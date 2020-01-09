@@ -108,11 +108,7 @@ module.exports = {
         })
     ],
     resolve: {
-        modules: [
-            path.resolve(project_root, 'node_modules'),
-            src_root
-        ],
-        extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.html'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.less', '.html'],
         plugins: [new TsConfigPathsPlugin()]
     },
     optimization: {

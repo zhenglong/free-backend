@@ -11,7 +11,7 @@ module.exports = {
     context: project_root,
     mode: 'production',
     entry: {
-        antd: ['antd'],
+        antd: ['antd', 'antd/dist/antd.less'],
         runtime: ['react', 'react-dom', 'axios', 'redux']
     },
     output: {
@@ -54,7 +54,10 @@ module.exports = {
                         plugins: [require('autoprefixer')]
                     }
                 }, {
-                    loader: 'less-loader'
+                    loader: 'less-loader',
+                    options: {
+                        javascriptEnabled: true
+                    }
                 }]
             },
             {
@@ -101,11 +104,7 @@ module.exports = {
         })
     ],
     resolve: {
-        modules: [
-            path.resolve(project_root, 'node_modules'),
-            src_root
-        ],
-        extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.html'],
+        extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.less', '.html'],
         plugins: [
             new TsConfigPathsPlugin()
         ]
