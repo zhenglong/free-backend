@@ -1,34 +1,22 @@
-var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('mini-css-extract-plugin');
 var TerserPlugin = require('terser-webpack-plugin');
 var TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+var webpack = require('webpack');
 var project_root = __dirname;
 var src_root = path.resolve(project_root, './src');
 var demo_root = path.resolve(project_root, './demo');
-var lib_root = path.resolve(project_root, './node_modules/');
-var antd_manifest = path.resolve(project_root, 'dll/antd.manifest.json');
-
-function vendor(src, symbol) {
-    return `${lib_root}/expose-loader?${symbol}!${path.join(lib_root, src)}`;
-}
 
 module.exports = {
+    context: project_root,
     mode: 'production',
     entry: {
-        'billboard-detail': path.resolve(demo_root, './billboard/detail/app.tsx'),
-        'billboard-list': path.resolve(demo_root, './billboard/list/app.tsx'),
-        'content-list': path.resolve(demo_root, './content/list/app.tsx'),
-        'content-detail': path.resolve(demo_root, './content/detail/app.tsx'),
-        'react-rt': [
-            vendor('react/cjs/react.production.min.js', 'React'),
-            vendor('react-dom/cjs/react-dom.production.min.js', 'ReactDOM'),
-            vendor('redux/dist/redux.min.js', 'Redux'),
-        ]
+        antd: ['antd']
     },
     output: {
-        path: path.resolve(project_root, './dist'),
-        filename: '[name].[hash:8].js'
+        path: path.resolve(project_root, './dll'),
+        filename: '[name].[hash:8].js',
+        library: '[name]_library'
     },
     module: {
         rules: [{
@@ -106,9 +94,9 @@ module.exports = {
             filename: '[name].[contenthash:8].css',
             chunkFilename: '[name].[contenthash:8].css'
         }),
-        new webpack.DllReferencePlugin({
-            context: project_root,
-            manifest: antd_manifest
+        new webpack.DllPlugin({
+            path: path.resolve(project_root, 'dll/[name].manifest.json'),
+            name: '[name]_library'
         })
     ],
     resolve: {
@@ -117,28 +105,15 @@ module.exports = {
             src_root
         ],
         extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.html'],
-        plugins: [new TsConfigPathsPlugin()]
-    },
-    externals: {
-        'react': 'React',
-        'react-dom': 'ReactDOM',
-        'redux': 'Redux',
+        plugins: [
+            new TsConfigPathsPlugin()
+        ]
     },
     optimization: {
         minimizer: [
             new TerserPlugin({
                 extractComments: true
             })
-        ],
-        splitChunks: {
-            minSize: 10000,
-            cacheGroups: {
-                commons: {
-                    // test: /[\\/]node_modules[\\/]/,
-                    name: 'common',
-                    chunks: 'all'
-                }
-            }
-        },
+        ]
     }
 };
