@@ -11,7 +11,8 @@ module.exports = {
     context: project_root,
     mode: 'production',
     entry: {
-        antd: ['antd']
+        antd: ['antd'],
+        runtime: ['react', 'react-dom', 'axios', 'redux']
     },
     output: {
         path: path.resolve(project_root, './dll'),

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "rm -rf ./dist/ && webpack",
     "demo": "http-server .",
-    "dll": "webpack --config webpack.dll.js"
+    "dll": "rm -rf ./dll/ && webpack --config webpack.dll.js"
   },
   "repository": {
     "type": "git",
