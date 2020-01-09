@@ -5,6 +5,11 @@ var TsConfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 var project_root = __dirname;
 var src_root = path.resolve(project_root, './src');
 var demo_root = path.resolve(project_root, './demo');
+var lib_root = path.resolve(project_root, './node_modules/');
+
+function vendor(src, symbol) {
+    return `${lib_root}/expose-loader?${symbol}!${path.join(lib_root, src)}`;
+}
 
 module.exports = {
     mode: 'production',
@@ -13,6 +18,11 @@ module.exports = {
         'billboard-list': path.resolve(demo_root, './billboard/list/app.tsx'),
         'content-list': path.resolve(demo_root, './content/list/app.tsx'),
         'content-detail': path.resolve(demo_root, './content/detail/app.tsx'),
+        'react-rt': [
+            vendor('react/cjs/react.production.min.js', 'React'),
+            vendor('react-dom/cjs/react-dom.production.min.js', 'ReactDOM'),
+            vendor('redux/dist/redux.min.js', 'Redux'),
+        ]
     },
     output: {
         path: path.resolve(project_root, './dist'),
@@ -103,21 +113,16 @@ module.exports = {
         extensions: ['.ts', '.tsx', '.js', 'jsx', '.scss', '.css', '.html'],
         plugins: [new TsConfigPathsPlugin()]
     },
+    externals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM',
+        'redux': 'Redux',
+    },
     optimization: {
         minimizer: [
             new TerserPlugin({
                 extractComments: true
             })
-        ],
-        splitChunks: {
-            minSize: 10000,
-            cacheGroups: {
-                commons: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: 'vendors',
-                    chunks: 'all'
-                }
-            }
-        },
+        ]
     }
 };
