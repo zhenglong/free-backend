@@ -11,6 +11,11 @@ const mappings = {
     '/activity/v2/resource/effectives?location=intro': ['3.json', 'GET'],
     '/activity/v2/resource/effectives?location=home': ['4.json', 'GET'],
     '/activity/v2/resource/effectives?location=list': ['5.json', 'GET'],
+
+    '/activity/v2/resource/activity/form/fields': ['6.json', 'GET'],
+    '/activity/v2/resource/activity/form/fields?location=intro': ['7.json', 'GET'],
+    '/activity/v2/resource/activity/form/fields?location=intro&resourceId=102': ['8.json', 'GET'],
+    '/activity/v2/resource/activity/form/fields?location=intro&resourceId=127': ['7.json', 'GET'],
 };
 app.use(koaStatic(path.resolve(__dirname, '..')));
 app.use(async function(ctx) {

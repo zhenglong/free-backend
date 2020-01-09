@@ -73,10 +73,6 @@ let formProps: FbdFormProps = {
                 })] : [];
         })
     }, {
-        type: FieldType.text,
-        title: '创建人',
-        id: 'createUser'
-    }, {
         type: FieldType.dateRange,
         title: '生效时间',
         fields: [{
@@ -112,17 +108,11 @@ let tableProps: FbdTableProps = {
             key: 'platform',
             type: TableField.selection(platformDataSource, true)
         }, {
-            title: '创建时间',
-            key: 'createDate',
-            type: TableField.date('YYYY-MM-DD hh:mm')
-        }, {
             title: '生效时间',
             key: 'effectiveTime',
             type: TableField.dateRange('YYYY-MM-DD hh:mm')
-        }, {
-        title: '创建人',
-            key: 'createUserName'
-    }],
+        }
+    ],
     actions: [ActionButtonType.edit({
             visibleGetter: isAvailableCb, 
             recorderIdGetter: record => `${record.resourceId}/${record.activityId}`

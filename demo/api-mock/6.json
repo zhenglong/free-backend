@@ -1,0 +1,684 @@
+{
+    "data": [
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": false,
+            "name": "activityId",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": null,
+            "tip": null,
+            "title": "活动ID",
+            "type": "hidden"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": false,
+            "name": "activityName",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                },
+                {
+                    "ruleCode": "max_length",
+                    "ruleDesc": "最大长度",
+                    "value": 20
+                }
+            ],
+            "tip": null,
+            "title": "运营活动名称",
+            "type": "text"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": "home",
+            "dynamic": false,
+            "name": "location",
+            "placeholder": null,
+            "predetermineValues": [
+                {
+                    "home": "选课中心页"
+                },
+                {
+                    "intro": "Intro 页"
+                },
+                {
+                    "paySuccess": "支付完成页"
+                },
+                {
+                    "list": "列表页"
+                }
+            ],
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                }
+            ],
+            "tip": null,
+            "title": "页面名称",
+            "type": "reload_drop_down_box"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": "125",
+            "dynamic": true,
+            "name": "resourceId",
+            "placeholder": null,
+            "predetermineValues": [
+                {
+                    "128": "首页各楼层优惠券"
+                },
+                {
+                    "126": "新十个蛋"
+                },
+                {
+                    "125": "选课中心菜单"
+                },
+                {
+                    "124": "触屏Lite版十个蛋"
+                },
+                {
+                    "122": "App十个蛋下五个坑"
+                },
+                {
+                    "121": "触屏十个蛋下五个坑"
+                },
+                {
+                    "120": "App大促位置"
+                },
+                {
+                    "119": "触屏大促位置"
+                },
+                {
+                    "118": "App十个蛋背景图片"
+                },
+                {
+                    "117": "触屏十个蛋背景图片"
+                },
+                {
+                    "115": "Mc 首页氛围"
+                },
+                {
+                    "114": "触屏首页十个蛋正式版"
+                },
+                {
+                    "113": "App首页十个蛋"
+                }
+            ],
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                }
+            ],
+            "tip": null,
+            "title": "展示位置",
+            "type": "reload_drop_down_box"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "platform",
+            "placeholder": null,
+            "predetermineValues": [
+                {
+                    "pc": "PC"
+                },
+                {
+                    "mc": "触屏"
+                }
+            ],
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                }
+            ],
+            "tip": null,
+            "title": "平台",
+            "type": "check_box_list"
+        },
+        {
+            "activateExpression": null,
+            "children": [
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": false,
+                    "name": "beginDate",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        }
+                    ],
+                    "tip": null,
+                    "title": "生效开始时间",
+                    "type": "datetime"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": false,
+                    "name": "endDate",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        }
+                    ],
+                    "tip": null,
+                    "title": "生效结束时间",
+                    "type": "datetime"
+                }
+            ],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": false,
+            "name": "effectTime",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": null,
+            "tip": null,
+            "title": "生效时间",
+            "type": "datetime_range"
+        },
+        {
+            "activateExpression": null,
+            "children": [
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "textContent1",
+                    "placeholder": "用户前台看到的文案",
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        },
+                        {
+                            "ruleCode": "max_length",
+                            "ruleDesc": "最大长度",
+                            "value": 8
+                        }
+                    ],
+                    "tip": null,
+                    "title": "文字内容1",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "mcAppImg1",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "max_img_width",
+                            "ruleDesc": "图片宽",
+                            "value": 0
+                        },
+                        {
+                            "ruleCode": "max_img_height",
+                            "ruleDesc": "图片高",
+                            "value": 0
+                        }
+                    ],
+                    "tip": null,
+                    "title": "选择 触屏/App 文件1",
+                    "type": "img_file_upload"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "linkAddress1",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": null,
+                    "tip": null,
+                    "title": "链接地址1",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "textContent2",
+                    "placeholder": "用户前台看到的文案",
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        },
+                        {
+                            "ruleCode": "max_length",
+                            "ruleDesc": "最大长度",
+                            "value": 8
+                        }
+                    ],
+                    "tip": null,
+                    "title": "文字内容2",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "mcAppImg2",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "max_img_width",
+                            "ruleDesc": "图片宽",
+                            "value": 0
+                        },
+                        {
+                            "ruleCode": "max_img_height",
+                            "ruleDesc": "图片高",
+                            "value": 0
+                        }
+                    ],
+                    "tip": null,
+                    "title": "选择 触屏/App 文件2",
+                    "type": "img_file_upload"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "linkAddress2",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": null,
+                    "tip": null,
+                    "title": "链接地址2",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "textContent3",
+                    "placeholder": "用户前台看到的文案",
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        },
+                        {
+                            "ruleCode": "max_length",
+                            "ruleDesc": "最大长度",
+                            "value": 8
+                        }
+                    ],
+                    "tip": null,
+                    "title": "文字内容3",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "mcAppImg3",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "max_img_width",
+                            "ruleDesc": "图片宽",
+                            "value": 0
+                        },
+                        {
+                            "ruleCode": "max_img_height",
+                            "ruleDesc": "图片高",
+                            "value": 0
+                        }
+                    ],
+                    "tip": null,
+                    "title": "选择 触屏/App 文件3",
+                    "type": "img_file_upload"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "linkAddress3",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": null,
+                    "tip": null,
+                    "title": "链接地址3",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "textContent4",
+                    "placeholder": "用户前台看到的文案",
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        },
+                        {
+                            "ruleCode": "max_length",
+                            "ruleDesc": "最大长度",
+                            "value": 8
+                        }
+                    ],
+                    "tip": null,
+                    "title": "文字内容4",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "mcAppImg4",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "max_img_width",
+                            "ruleDesc": "图片宽",
+                            "value": 0
+                        },
+                        {
+                            "ruleCode": "max_img_height",
+                            "ruleDesc": "图片高",
+                            "value": 0
+                        }
+                    ],
+                    "tip": null,
+                    "title": "选择 触屏/App 文件4",
+                    "type": "img_file_upload"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "linkAddress4",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": null,
+                    "tip": null,
+                    "title": "链接地址4",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "textContent5",
+                    "placeholder": "用户前台看到的文案",
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        },
+                        {
+                            "ruleCode": "max_length",
+                            "ruleDesc": "最大长度",
+                            "value": 8
+                        }
+                    ],
+                    "tip": null,
+                    "title": "文字内容5",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "mcAppImg5",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "max_img_width",
+                            "ruleDesc": "图片宽",
+                            "value": 0
+                        },
+                        {
+                            "ruleCode": "max_img_height",
+                            "ruleDesc": "图片高",
+                            "value": 0
+                        }
+                    ],
+                    "tip": null,
+                    "title": "选择 触屏/App 文件5",
+                    "type": "img_file_upload"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "linkAddress5",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": null,
+                    "tip": null,
+                    "title": "链接地址5",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "textContent6",
+                    "placeholder": "用户前台看到的文案",
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        },
+                        {
+                            "ruleCode": "max_length",
+                            "ruleDesc": "最大长度",
+                            "value": 8
+                        }
+                    ],
+                    "tip": null,
+                    "title": "文字内容6",
+                    "type": "text"
+                },
+                {
+                    "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "mcAppImg6",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "max_img_width",
+                            "ruleDesc": "图片宽",
+                            "value": 0
+                        },
+                        {
+                            "ruleCode": "max_img_height",
+                            "ruleDesc": "图片高",
+                            "value": 0
+                        }
+                    ],
+                    "tip": null,
+                    "title": "选择 触屏/App 文件6",
+                    "type": "img_file_upload"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": true,
+                    "name": "linkAddress6",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": null,
+                    "tip": null,
+                    "title": "链接地址6",
+                    "type": "text"
+                }
+            ],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "maxGroupImageTextSize",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": null,
+            "tip": null,
+            "title": "icon组",
+            "type": "group"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "textContent",
+            "placeholder": "用户前台看到的文案",
+            "predetermineValues": null,
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                },
+                {
+                    "ruleCode": "max_length",
+                    "ruleDesc": "最大长度",
+                    "value": 54
+                }
+            ],
+            "tip": null,
+            "title": "文字内容",
+            "type": "hidden"
+        },
+        {
+            "activateExpression": "${platform}.indexOf('mc') >= 0 || ${platform}.indexOf('android') >= 0 || ${platform}.indexOf('ios') >= 0",
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "mcAppImg",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": [
+                {
+                    "ruleCode": "max_img_width",
+                    "ruleDesc": "图片宽",
+                    "value": 0
+                },
+                {
+                    "ruleCode": "max_img_height",
+                    "ruleDesc": "图片高",
+                    "value": 0
+                }
+            ],
+            "tip": null,
+            "title": "选择 触屏/App 文件",
+            "type": "hidden"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "linkAddress",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": null,
+            "tip": null,
+            "title": "链接地址",
+            "type": "hidden"
+        }
+    ],
+    "message": "success",
+    "status": 0,
+    "time": null
+}

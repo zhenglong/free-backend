@@ -1,0 +1,354 @@
+{
+    "data": [
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": false,
+            "name": "activityId",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": null,
+            "tip": null,
+            "title": "活动ID",
+            "type": "hidden"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": false,
+            "name": "activityName",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                },
+                {
+                    "ruleCode": "max_length",
+                    "ruleDesc": "最大长度",
+                    "value": 20
+                }
+            ],
+            "tip": null,
+            "title": "运营活动名称",
+            "type": "text"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": "intro",
+            "dynamic": false,
+            "name": "location",
+            "placeholder": null,
+            "predetermineValues": [
+                {
+                    "home": "选课中心页"
+                },
+                {
+                    "intro": "Intro 页"
+                },
+                {
+                    "paySuccess": "支付完成页"
+                },
+                {
+                    "list": "列表页"
+                }
+            ],
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                }
+            ],
+            "tip": null,
+            "title": "页面名称",
+            "type": "reload_drop_down_box"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": "97",
+            "dynamic": true,
+            "name": "resourceId",
+            "placeholder": null,
+            "predetermineValues": [
+                {
+                    "127": "intro促销图片链"
+                },
+                {
+                    "102": "Intro页咨询引导"
+                },
+                {
+                    "99": "3333"
+                },
+                {
+                    "97": "测试生效时间"
+                },
+                {
+                    "96": "测试07031336"
+                },
+                {
+                    "94": "测试编辑"
+                },
+                {
+                    "93": "测试链接"
+                },
+                {
+                    "92": "测试启用禁用12"
+                },
+                {
+                    "88": "测试富文本位置"
+                },
+                {
+                    "87": "测试图片位置"
+                },
+                {
+                    "86": "Intro页富文本"
+                },
+                {
+                    "85": "Intro页图片链"
+                },
+                {
+                    "83": "验证富文本数据"
+                },
+                {
+                    "80": "验证数据库数据2"
+                },
+                {
+                    "79": "验证数据库数据"
+                },
+                {
+                    "76": "intro广告位"
+                },
+                {
+                    "75": "intro页优惠券"
+                },
+                {
+                    "74": "Intro文字链"
+                },
+                {
+                    "72": "222"
+                },
+                {
+                    "71": "111111"
+                },
+                {
+                    "70": "111"
+                },
+                {
+                    "67": "05aa28af-4"
+                },
+                {
+                    "60": "Bannerb51"
+                },
+                {
+                    "59": "Imga22"
+                },
+                {
+                    "58": "Coupon93f"
+                },
+                {
+                    "57": "Coupon520"
+                },
+                {
+                    "56": "Imgd63"
+                },
+                {
+                    "55": "Coupon320"
+                },
+                {
+                    "54": "Bannerdd9"
+                },
+                {
+                    "53": "Coupon096"
+                },
+                {
+                    "52": "Banner37b"
+                },
+                {
+                    "49": "94485c21-6"
+                },
+                {
+                    "42": "Bannerdb2"
+                },
+                {
+                    "41": "Img3e8"
+                },
+                {
+                    "40": "Coupon2fa"
+                },
+                {
+                    "39": "Coupon41f"
+                },
+                {
+                    "38": "Img4fe"
+                },
+                {
+                    "37": "Coupon330"
+                },
+                {
+                    "36": "Banner6f9"
+                },
+                {
+                    "35": "Couponced"
+                },
+                {
+                    "32": "e5d83c45-d"
+                },
+                {
+                    "25": "Banner27e"
+                },
+                {
+                    "24": "Imgf3c"
+                },
+                {
+                    "23": "Coupon65b"
+                },
+                {
+                    "22": "Coupon2e9"
+                },
+                {
+                    "21": "Img9e5"
+                },
+                {
+                    "20": "Coupon7ac"
+                },
+                {
+                    "19": "Bannerd3b"
+                },
+                {
+                    "18": "Coupon85d"
+                },
+                {
+                    "11": "c643a1b9-5"
+                }
+            ],
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                }
+            ],
+            "tip": null,
+            "title": "展示位置",
+            "type": "reload_drop_down_box"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "platform",
+            "placeholder": null,
+            "predetermineValues": [
+                {
+                    "pc": "PC"
+                }
+            ],
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                }
+            ],
+            "tip": null,
+            "title": "平台",
+            "type": "check_box_list"
+        },
+        {
+            "activateExpression": null,
+            "children": [
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": false,
+                    "name": "beginDate",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        }
+                    ],
+                    "tip": null,
+                    "title": "生效开始时间",
+                    "type": "datetime"
+                },
+                {
+                    "activateExpression": null,
+                    "children": [],
+                    "computedValue": null,
+                    "defaultValue": null,
+                    "dynamic": false,
+                    "name": "endDate",
+                    "placeholder": null,
+                    "predetermineValues": null,
+                    "rules": [
+                        {
+                            "ruleCode": "require",
+                            "ruleDesc": "不能为空",
+                            "value": null
+                        }
+                    ],
+                    "tip": null,
+                    "title": "生效结束时间",
+                    "type": "datetime"
+                }
+            ],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": false,
+            "name": "effectTime",
+            "placeholder": null,
+            "predetermineValues": null,
+            "rules": null,
+            "tip": null,
+            "title": "生效时间",
+            "type": "datetime_range"
+        },
+        {
+            "activateExpression": null,
+            "children": [],
+            "computedValue": null,
+            "defaultValue": null,
+            "dynamic": true,
+            "name": "textContent",
+            "placeholder": "用户前台看到的文案",
+            "predetermineValues": null,
+            "rules": [
+                {
+                    "ruleCode": "require",
+                    "ruleDesc": "不能为空",
+                    "value": null
+                },
+                {
+                    "ruleCode": "max_length",
+                    "ruleDesc": "最大长度",
+                    "value": 20
+                }
+            ],
+            "tip": "提示：最多20个汉字",
+            "title": "文字内容",
+            "type": "text"
+        }
+    ],
+    "message": "success",
+    "status": 0,
+    "time": null
+}
