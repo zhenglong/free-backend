@@ -1,0 +1,98 @@
+{
+    "data": [
+        {
+            "location": "home",
+            "resourceCode": "Floor-Coupon",
+            "resourceId": 128,
+            "resourceName": "首页各楼层优惠券",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "test-1",
+            "resourceId": 126,
+            "resourceName": "新十个蛋",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "homepagenavigationbar",
+            "resourceId": 125,
+            "resourceName": "选课中心菜单",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Lite_Home_Icons",
+            "resourceId": 124,
+            "resourceName": "触屏Lite版十个蛋",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_2rd_Icons_App",
+            "resourceId": 122,
+            "resourceName": "App十个蛋下五个坑",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_2rd_Icons",
+            "resourceId": 121,
+            "resourceName": "触屏十个蛋下五个坑",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_Activity_Js_App",
+            "resourceId": 120,
+            "resourceName": "App大促位置",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_Activity_Js",
+            "resourceId": 119,
+            "resourceName": "触屏大促位置",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_Icon_BG_App",
+            "resourceId": 118,
+            "resourceName": "App十个蛋背景图片",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_Icon_BG",
+            "resourceId": 117,
+            "resourceName": "触屏十个蛋背景图片",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "mcfenwei",
+            "resourceId": 115,
+            "resourceName": "Mc 首页氛围",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_Icons",
+            "resourceId": 114,
+            "resourceName": "触屏首页十个蛋正式版",
+            "status": 1
+        },
+        {
+            "location": "home",
+            "resourceCode": "Home_Icons_App",
+            "resourceId": 113,
+            "resourceName": "App首页十个蛋",
+            "status": 1
+        }
+    ],
+    "message": "success",
+    "status": 0,
+    "time": null
+}

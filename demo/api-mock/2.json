@@ -1,0 +1,357 @@
+{
+    "data": [
+        {
+            "location": "intro",
+            "resourceCode": "Intro_Image_Promotion_Link",
+            "resourceId": 127,
+            "resourceName": "intro促销图片链",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "Intro_ConsultGuide",
+            "resourceId": 102,
+            "resourceName": "Intro页咨询引导",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "33333",
+            "resourceId": 99,
+            "resourceName": "3333",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "dsfdffdssfsfds",
+            "resourceId": 97,
+            "resourceName": "测试生效时间",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "测试201907031336",
+            "resourceId": 96,
+            "resourceName": "测试07031336",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "测试编辑",
+            "resourceId": 94,
+            "resourceName": "测试编辑",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "231312312321",
+            "resourceId": 93,
+            "resourceName": "测试链接",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "1111dsfs",
+            "resourceId": 92,
+            "resourceName": "测试启用禁用12",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "测试富文本位置",
+            "resourceId": 88,
+            "resourceName": "测试富文本位置",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "img_12323magc",
+            "resourceId": 87,
+            "resourceName": "测试图片位置",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "Intro_RichText",
+            "resourceId": 86,
+            "resourceName": "Intro页富文本",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "Intro_Image_Link",
+            "resourceId": 85,
+            "resourceName": "Intro页图片链",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "验证富文本数据001",
+            "resourceId": 83,
+            "resourceName": "验证富文本数据",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "yzhengshujukushuju2",
+            "resourceId": 80,
+            "resourceName": "验证数据库数据2",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "yzhengshujukushuju",
+            "resourceId": 79,
+            "resourceName": "验证数据库数据",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "introguangaowei",
+            "resourceId": 76,
+            "resourceName": "intro广告位",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "Intro_Coupon",
+            "resourceId": 75,
+            "resourceName": "intro页优惠券",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "Intro_Text_Link",
+            "resourceId": 74,
+            "resourceName": "Intro文字链",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "222",
+            "resourceId": 72,
+            "resourceName": "222",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "111",
+            "resourceId": 71,
+            "resourceName": "111111",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "3333",
+            "resourceId": 70,
+            "resourceName": "111",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "47bd534a-cace-4010-a3c4-05e2e53bd496",
+            "resourceId": 67,
+            "resourceName": "05aa28af-4",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "5771fb05-3102-4597-91c5-7990b9973cf1",
+            "resourceId": 60,
+            "resourceName": "Bannerb51",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "09ace205-439e-4562-a041-20e438a61070",
+            "resourceId": 59,
+            "resourceName": "Imga22",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "8943391e-14a4-45c4-a785-a4565a5f74f6",
+            "resourceId": 58,
+            "resourceName": "Coupon93f",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "fcb695e5-ec52-40b9-8df5-42bd3c1b196e",
+            "resourceId": 57,
+            "resourceName": "Coupon520",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "e32964c7-0ddc-4d13-8a22-017cc6de37a9",
+            "resourceId": 56,
+            "resourceName": "Imgd63",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "430c666b-a384-42b9-a2ed-24a5b4f7ccf4",
+            "resourceId": 55,
+            "resourceName": "Coupon320",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "87eac1f5-d08c-4e0b-bad7-43e58d424aa7",
+            "resourceId": 54,
+            "resourceName": "Bannerdd9",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "9c454892-bc85-4589-9cbc-bc4bcfc57b52",
+            "resourceId": 53,
+            "resourceName": "Coupon096",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "417602ab-69f6-4615-bdfd-89b7b1e78c3f",
+            "resourceId": 52,
+            "resourceName": "Banner37b",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "c26ee37a-a842-43fb-9848-00ac1e61d58a",
+            "resourceId": 49,
+            "resourceName": "94485c21-6",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "330a4774-d769-454c-8507-38afbe3543c5",
+            "resourceId": 42,
+            "resourceName": "Bannerdb2",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "0791c413-62f4-4f80-bd8c-4087d9579dd2",
+            "resourceId": 41,
+            "resourceName": "Img3e8",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "03325c28-5ca5-4485-82c8-d8c0f00478e3",
+            "resourceId": 40,
+            "resourceName": "Coupon2fa",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "986498f4-7c37-4b72-9400-43f066894341",
+            "resourceId": 39,
+            "resourceName": "Coupon41f",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "c4c42db4-d4dc-4cf1-82fc-443040bbd9b9",
+            "resourceId": 38,
+            "resourceName": "Img4fe",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "9b413844-6808-40e5-8505-2f01e4515510",
+            "resourceId": 37,
+            "resourceName": "Coupon330",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "6d9bb0b4-6f90-4e7f-bb70-6e67e078d736",
+            "resourceId": 36,
+            "resourceName": "Banner6f9",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "210c4121-1df4-479f-aae0-07520d6a4c69",
+            "resourceId": 35,
+            "resourceName": "Couponced",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "30063420-cd3b-4be9-ad48-fc05385f8b4c",
+            "resourceId": 32,
+            "resourceName": "e5d83c45-d",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "d6b6f95e-0eff-421a-ad43-6fabbba4b98a",
+            "resourceId": 25,
+            "resourceName": "Banner27e",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "a3701886-41f9-4efa-b915-668e5b8fd493",
+            "resourceId": 24,
+            "resourceName": "Imgf3c",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "1015ac5a-1bfd-4316-b11b-dbf41759135f",
+            "resourceId": 23,
+            "resourceName": "Coupon65b",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "136cff47-b6a6-4d05-b351-8d28713f3763",
+            "resourceId": 22,
+            "resourceName": "Coupon2e9",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "f7cfd08b-94a0-4518-b014-934432491d01",
+            "resourceId": 21,
+            "resourceName": "Img9e5",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "65cec297-4d2e-46f5-92ad-73749c3fcffc",
+            "resourceId": 20,
+            "resourceName": "Coupon7ac",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "bf7d1c04-337e-4cba-a698-e5ddcb1d231e",
+            "resourceId": 19,
+            "resourceName": "Bannerd3b",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "def8230e-2b7e-4653-bcb5-5f88ddb1d929",
+            "resourceId": 18,
+            "resourceName": "Coupon85d",
+            "status": 1
+        },
+        {
+            "location": "intro",
+            "resourceCode": "7e22d403-f56c-4ee0-bc89-d3a98b54bbdd",
+            "resourceId": 11,
+            "resourceName": "c643a1b9-5",
+            "status": 1
+        }
+    ],
+    "message": "success",
+    "status": 0,
+    "time": null
+}

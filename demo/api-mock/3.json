@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "location": "paySuccess",
+            "resourceCode": "Pay_Success_Gift",
+            "resourceId": 103,
+            "resourceName": "支付完成页买赠",
+            "status": 1
+        }
+    ],
+    "message": "success",
+    "status": 0,
+    "time": null
+}

@@ -1,0 +1,302 @@
+{
+    "data": {
+        "pagination": {
+            "currentPageIndex": 1,
+            "pageSize": 20,
+            "sortColumn": null,
+            "sortEnum": 0,
+            "totalCount": 183
+        },
+        "resultData": [
+            {
+                "activityId": 199,
+                "activityName": "咨询引导文案",
+                "beginDate": "2020-01-02T00:00:00+0800",
+                "endDate": "2021-02-28T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "pc",
+                    "mc",
+                    "android",
+                    "ios"
+                ],
+                "resourceId": 102,
+                "resourceName": "Intro页咨询引导",
+                "status": 1
+            },
+            {
+                "activityId": 198,
+                "activityName": "楼层一",
+                "beginDate": "2019-12-30T00:00:00+0800",
+                "endDate": "2020-01-02T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "pc"
+                ],
+                "resourceId": 128,
+                "resourceName": "首页各楼层优惠券",
+                "status": 2
+            },
+            {
+                "activityId": 197,
+                "activityName": "测试1511510",
+                "beginDate": "2019-12-24T00:00:00+0800",
+                "endDate": "2020-01-26T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "pc",
+                    "mc",
+                    "android",
+                    "ios"
+                ],
+                "resourceId": 127,
+                "resourceName": "intro促销图片链",
+                "status": 1
+            },
+            {
+                "activityId": 196,
+                "activityName": "无促销活动的氛围图",
+                "beginDate": "2019-12-23T00:00:00+0800",
+                "endDate": "2019-12-31T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "pc",
+                    "ios",
+                    "mc",
+                    "android"
+                ],
+                "resourceId": 85,
+                "resourceName": "Intro页图片链",
+                "status": 2
+            },
+            {
+                "activityId": 195,
+                "activityName": "intro页促销氛围测试",
+                "beginDate": "2019-12-20T00:00:00+0800",
+                "endDate": "2019-12-31T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "pc",
+                    "mc",
+                    "android"
+                ],
+                "resourceId": 127,
+                "resourceName": "intro促销图片链",
+                "status": 2
+            },
+            {
+                "activityId": 194,
+                "activityName": "测试范围191481393",
+                "beginDate": "2019-12-12T00:00:00+0800",
+                "endDate": "2019-12-12T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "mc"
+                ],
+                "resourceId": 85,
+                "resourceName": "Intro页图片链",
+                "status": 2
+            },
+            {
+                "activityId": 193,
+                "activityName": "不互斥的折扣券155239",
+                "beginDate": "2019-12-09T00:00:00+0800",
+                "endDate": "2027-01-24T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "mc",
+                    "pc",
+                    "android"
+                ],
+                "resourceId": 75,
+                "resourceName": "intro页优惠券",
+                "status": 1
+            },
+            {
+                "activityId": 192,
+                "activityName": "不互斥的立减券171476141",
+                "beginDate": "2019-12-09T00:00:00+0800",
+                "endDate": "2020-01-26T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "mc",
+                    "pc",
+                    "android"
+                ],
+                "resourceId": 75,
+                "resourceName": "intro页优惠券",
+                "status": 1
+            },
+            {
+                "activityId": 191,
+                "activityName": "互斥立减券181480318",
+                "beginDate": "2019-12-09T00:00:00+0800",
+                "endDate": "2028-01-23T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "mc",
+                    "pc",
+                    "android"
+                ],
+                "resourceId": 75,
+                "resourceName": "intro页优惠券",
+                "status": 1
+            },
+            {
+                "activityId": 190,
+                "activityName": "测试优惠券181480318",
+                "beginDate": "2019-12-09T00:00:00+0800",
+                "endDate": "2026-01-25T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "mc",
+                    "pc",
+                    "android"
+                ],
+                "resourceId": 75,
+                "resourceName": "intro页优惠券",
+                "status": 1
+            },
+            {
+                "activityId": 189,
+                "activityName": "导航栏",
+                "beginDate": "2019-11-21T00:00:00+0800",
+                "endDate": "2019-12-26T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "pc"
+                ],
+                "resourceId": 125,
+                "resourceName": "选课中心菜单",
+                "status": 2
+            },
+            {
+                "activityId": 188,
+                "activityName": "test",
+                "beginDate": "2019-11-21T00:00:00+0800",
+                "endDate": "2019-12-24T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "pc"
+                ],
+                "resourceId": 126,
+                "resourceName": "新十个蛋",
+                "status": 2
+            },
+            {
+                "activityId": 187,
+                "activityName": "选课中心菜单",
+                "beginDate": "2019-11-21T00:00:00+0800",
+                "endDate": "2019-12-27T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "pc"
+                ],
+                "resourceId": 125,
+                "resourceName": "选课中心菜单",
+                "status": 2
+            },
+            {
+                "activityId": 186,
+                "activityName": "111",
+                "beginDate": "2019-10-31T00:00:00+0800",
+                "endDate": "2020-12-27T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "pc",
+                    "ios",
+                    "mc",
+                    "android"
+                ],
+                "resourceId": 85,
+                "resourceName": "Intro页图片链",
+                "status": 1
+            },
+            {
+                "activityId": 185,
+                "activityName": "正式可用APP十个蛋资源位",
+                "beginDate": "2019-08-08T00:00:00+0800",
+                "endDate": "2022-09-25T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "android"
+                ],
+                "resourceId": 113,
+                "resourceName": "App首页十个蛋",
+                "status": 1
+            },
+            {
+                "activityId": 184,
+                "activityName": "正式可用触屏十个蛋资源位",
+                "beginDate": "2019-08-21T00:00:00+0800",
+                "endDate": "2026-09-27T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "mc",
+                    "android"
+                ],
+                "resourceId": 124,
+                "resourceName": "触屏Lite版十个蛋",
+                "status": 1
+            },
+            {
+                "activityId": 183,
+                "activityName": "触屏十个蛋下五个坑",
+                "beginDate": "2019-08-20T00:00:00+0800",
+                "endDate": "2025-09-24T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "mc"
+                ],
+                "resourceId": 121,
+                "resourceName": "触屏十个蛋下五个坑",
+                "status": 1
+            },
+            {
+                "activityId": 182,
+                "activityName": "正式可用触屏十个蛋资源位",
+                "beginDate": "2019-08-21T00:00:00+0800",
+                "endDate": "2026-09-27T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "mc"
+                ],
+                "resourceId": 114,
+                "resourceName": "触屏首页十个蛋正式版",
+                "status": 1
+            },
+            {
+                "activityId": 181,
+                "activityName": "正式可用触屏十个蛋资源位",
+                "beginDate": "2019-08-26T00:00:00+0800",
+                "endDate": "2019-09-29T23:59:59+0800",
+                "location": "home",
+                "platform": [
+                    "mc"
+                ],
+                "resourceId": 114,
+                "resourceName": "触屏首页十个蛋正式版",
+                "status": 2
+            },
+            {
+                "activityId": 180,
+                "activityName": "171477525图片链",
+                "beginDate": "2019-09-19T00:00:00+0800",
+                "endDate": "2021-10-17T23:59:59+0800",
+                "location": "intro",
+                "platform": [
+                    "pc",
+                    "ios",
+                    "mc",
+                    "android"
+                ],
+                "resourceId": 85,
+                "resourceName": "Intro页图片链",
+                "status": 1
+            }
+        ]
+    },
+    "message": "success",
+    "status": 0,
+    "time": null
+}
